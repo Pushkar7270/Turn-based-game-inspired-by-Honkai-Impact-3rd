@@ -5,7 +5,7 @@ import slow_writing as sw
 def main():
     kiana = ch.Characters('Kiana',3000,3000,480,680,5,4,3)
     mei = ch.Characters('Mei', 2900,2900,460,550,4,5,3)
-    bronya =ch.Characters('Bronya', 2800,2800,470,700,3,2,5)
+    bronya =ch.Characters('Bronya', 3500,3500,470,700,3,2,5)
     Boss_enemy = bs.Boss('Husk:Nihilus', 7000 , 7000 , 500 , 700 , 2 , 3 , 3)
     try:
         while True:
