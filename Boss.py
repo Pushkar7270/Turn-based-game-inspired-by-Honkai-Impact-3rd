@@ -46,22 +46,37 @@ class Boss:
                     damage = self.Move1//2
                 elif choiced == 3:
                     sw.print_slow(f'{self.name} used {self.move2_name} on {Target.name} but {Target.name} parried the attack')
+                    damage = self.Move2//2
+                elif choiced == 4:
+                    sw.print_slow(f'{self.name} used {self.move3_name} on {Target.name} but {Target.name} parried the attack')
+                    damage = self.Move3//2
             elif critHit:
                 if choiced == 1:
                     sw.print_slow(f'{self.name} attacked {Target.name}')
                     sw.print_slow('CRITICAL HIT!')
-                    damage = self.ATK*2
+                    damage = self.BasicATK*2
                 elif choiced == 2:
-                    sw.print_slow(f'{self.name} stabbed {Target.name} with its weapon')
-                    sw.print_slow('CRITICAL HIT!')
-                    damage = self.WeaponATK*2
+                    sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name}')
+                    damage = self.Move1*2
+                elif choiced == 3:
+                    sw.print_slow(f'{self.name} used {self.move2_name} on {Target.name}')
+                    damage = self.Move2*2
+                elif choiced == 4:
+                    sw.print_slow(f'{self.name} used {self.move3_name} on {Target.name}')
+                    damage = self.Move3*2
             elif not parry and not critHit:
                 if choiced == 1:
                     sw.print_slow(f'{self.name} attacked {Target.name}')
                     damage = self.BasicATK
                 elif choiced == 2:
-                    sw.print_slow(f'{self.name} stabbed {Target.name} with its weapon')
-                    damage = self.WeaponATK
+                    sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name}')
+                    damage = self.Move1
+                elif choiced == 3:
+                    sw.print_slow(f'{self.name} used {self.move2_name} on {Target.name}')
+                    damage = self.Move2
+                elif choiced == 4:
+                    sw.print_slow(f'{self.name} used {self.move3_name} on {Target.name}')
+                    damage = self.Move3
             TotalDamage = damage
             sw.print_slow(f'{TotalDamage} was dealt out of {Target.HP}')
             Target.HP -= TotalDamage
