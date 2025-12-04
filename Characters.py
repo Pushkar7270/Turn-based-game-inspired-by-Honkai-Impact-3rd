@@ -67,49 +67,81 @@ class Characters:
                                 sw.print_slow('You do not have any turns left!')
                                 continue
                         elif choice == 3:
-                            sw.print_slow(f'{self.name} used {self.move2_name} on {Target.name}  but {Target.name} parried your attack!')
-                            damage = self.Move2//2
-                            self.pp2 -=1
+                            if self.pp2 !=0:           
+                                sw.print_slow(f'{self.name} used {self.move2_name} on {Target.name}  but {Target.name} parried your attack!')
+                                damage = self.Move2//2
+                                self.pp2 -=1
+                            else:
+                                sw.print_slow('You do not have any turns left!')
+                                continue
                         elif choice == 4:
-                            sw.print_slow(f'{self.name} used {self.move3_name} on {Target.name}  but {Target.name} parried your attack!')
-                            damage = self.Move3//2
-                            self.pp3 -= 1
+                            if self.pp3 != 0:
+                                sw.print_slow(f'{self.name} used {self.move3_name} on {Target.name}  but {Target.name} parried your attack!')
+                                damage = self.Move3//2
+                                self.pp3 -= 1
+                            else:
+                                sw.print_slow('You do not have any turns left!')
+                                continue
                     elif critHit:
                         if choice == 1:
                             sw.print_slow(f'{self.name} attacked {Target.name}')
                             print('CRITICAL HIT!')
                             damage = self.ATK*2
                         elif choice == 2:
-                            sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name} !')
-                            print('CRITICAL HIT!')
-                            damage = self.Move1*2
-                            self.pp1 -=1
+                            if self.pp1 !=0:
+                                sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name} !')
+                                print('CRITICAL HIT!')
+                                damage = self.Move1*2
+                                self.pp1 -=1
+                            else:
+                                sw.print_slow('You do not have any turns left!')
+                                continue
                         elif choice == 3:
-                            sw.print_slow(f'{self.name} used {self.move2_name} on {Target.name}!')
-                            print('CRITICAL HIT!')
-                            damage = self.Move2*2
+                            if self.pp2 != 0:
+                                sw.print_slow(f'{self.name} used {self.move2_name} on {Target.name}!')
+                                print('CRITICAL HIT!')
+                                damage = self.Move2*2
+                            else:
+                                sw.print_slow('You do not have any turns left!')
+                                continue
                             self.pp2 -=1
                         elif choice == 4:
-                            sw.print_slow(f'{self.name} used {self.move3_name} on {Target.name}!')
-                            print('CRITICAL HIT!')
-                            damage = self.Move3*2
-                            self.pp3 -= 1
+                            if self.pp3 != 0:
+                                sw.print_slow(f'{self.name} used {self.move3_name} on {Target.name}!')
+                                print('CRITICAL HIT!')
+                                damage = self.Move3*2
+                                self.pp3 -= 1
+                            else:
+                                sw.print_slow('You do not have any turns left!')
+                                continue
                     elif not parry and not critHit:
                         if choice == 1:
                             sw.print_slow(f'{self.name} attacked {Target.name}')
                             damage = self.ATK
                         elif choice == 2:
-                            sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name}!')
-                            damage = self.Move1
-                            self.pp1 -=1
+                            if self.pp1 !=0:
+                                sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name}!')
+                                damage = self.Move1
+                                self.pp1 -=1
+                            else:
+                                sw.print_slow('You do not have any turns left!')
+                                continue
                         elif choice == 3:
-                            sw.print_slow(f'{self.name} used {self.move2_name} on {Target.name}!')
-                            damage = self.Move2
-                            self.pp2 -=1
+                            if self.pp2 != 0:
+                                sw.print_slow(f'{self.name} used {self.move2_name} on {Target.name}!')
+                                damage = self.Move2
+                                self.pp2 -=1
+                            else:
+                                sw.print_slow('You do not have any turns left!')
+                                continue
                         elif choice == 4:
-                            sw.print_slow(f'{self.name} used {self.move3_name} on {Target.name}!')
-                            damage = self.Move3
-                            self.pp3 -= 1
+                            if self.pp3 != 0:
+                                sw.print_slow(f'{self.name} used {self.move3_name} on {Target.name}!')
+                                damage = self.Move3
+                                self.pp3 -= 1
+                            else:
+                                sw.print_slow('You do not have any turns left!')
+                                continue
                 Totaldamage = damage
                 sw.print_slow(f'{Totaldamage} was dealt out of {Target.HP}')
                 Target.HP -= Totaldamage
