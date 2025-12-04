@@ -3,9 +3,9 @@ import Characters as ch
 import Boss as bs
 import slow_writing as sw
 def main():
-    kiana = ch.Characters('Kiana',3000,3000,480,680,5,4,3)
-    mei = ch.Characters('Mei', 2900,2900,460,550,4,5,3)
-    bronya =ch.Characters('Bronya', 3500,3500,470,700,3,2,5)
+    kiana = ch.Characters('Kiana',4400,4400,350,400,420,550,5,4,2,10,10,5,'Subspace lance','Neko Charm','Shamash Unleashed')
+    mei = ch.Characters('Mei', 3000,3000,320,350,400,500,3,5,4,10,10,5,'Searing slash','7 Thunders:Rumble','Fate cutter')
+    bronya =ch.Characters('Bronya', 4900,4900,390,470,450,600,3,2,5,10,10,5,'Cognitive destruction','Selene','Quasi-black hole')
     Boss_enemy = bs.Boss('Husk:Nihilus', 7000 , 7000 , 500 , 700 , 2 , 3 , 3)
     try:
         while True:

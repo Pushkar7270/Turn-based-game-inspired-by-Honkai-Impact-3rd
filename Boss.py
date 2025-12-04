@@ -1,17 +1,22 @@
 import random
 import slow_writing as sw
 class Boss:
-    def __init__(self, name , HP , MAXHP , ATK,WeaponATK,Crit,SPD,DeF):
-        self.name = name
-        self.HP = HP
-        self.MAXHP = MAXHP
-        self.ATK = ATK
-        self.WeaponATK = WeaponATK
-        self.Crit_list = ['Crit'] * Crit + ['Normal'] * (10 - Crit)
-        self.Dodge_list = ['Dodge'] * SPD + ['Normal'] * (10-SPD)
-        self.Parry_list = ['Parry']* DeF + ['Normal'] * (10-DeF)
+    def __init__(self, name , HP , MAXHP , BasicATK,Move1,Move2,Move3,Crit,SPD,DeF,move1_name,move2_name,move3_name):
+            self.name = name
+            self.HP = HP
+            self.MAXHP = MAXHP
+            self.BasicATK = BasicATK
+            self.Move1 = Move1 
+            self.Move2 = Move2
+            self.Move3 = Move3
+            self.Crit_list = ['Crit'] * Crit + ['Normal'] * (10 - Crit)
+            self.Dodge_list = ['Dodge'] * SPD + ['Normal'] * (10-SPD)
+            self.Parry_list = ['Parry']* DeF + ['Normal'] * (10-DeF)
+            self.move1_name = move1_name
+            self.move2_name = move2_name
+            self.move3_name = move3_name
     def Attack(self,Target):
-        choices = [1,2]
+        choices = [1,2,3,4]
         choiced = random.choice(choices)
         critHit = False
         parry = False
@@ -35,10 +40,12 @@ class Boss:
             if parry:
                 if choiced == 1:
                     sw.print_slow(f'{self.name} attacked {Target.name} but {Target.name} parried the attack!')
-                    damage = self.ATK//2
+                    damage = self.BasicATK//2
                 elif choiced == 2:
-                    sw.print_slow(f'{self.name} tried to stab {Target.name} but {Target.name} parried the attack')
-                    damage = self.WeaponATK//2
+                    sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name} but {Target.name} parried the attack')
+                    damage = self.Move1//2
+                elif choiced == 3:
+                    sw.print_slow(f'{self.name} used {self.move2_name} on {Target.name} but {Target.name} parried the attack')
             elif critHit:
                 if choiced == 1:
                     sw.print_slow(f'{self.name} attacked {Target.name}')
@@ -51,7 +58,7 @@ class Boss:
             elif not parry and not critHit:
                 if choiced == 1:
                     sw.print_slow(f'{self.name} attacked {Target.name}')
-                    damage = self.ATK
+                    damage = self.BasicATK
                 elif choiced == 2:
                     sw.print_slow(f'{self.name} stabbed {Target.name} with its weapon')
                     damage = self.WeaponATK
