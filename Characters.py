@@ -32,7 +32,7 @@ class Characters:
                     sw.print_slow('You have forfeited the battle.')
                     self.HP = 0
                     break
-                elif choice>5 or choice <0:
+                elif choice>5 or choice <=0:
                     sw.print_slow('Invalid input. Choose between 1 and 3')
                     continue
                 critHit = False
@@ -57,7 +57,7 @@ class Characters:
                     if parry:
                         if choice == 1:
                             sw.print_slow(f'{self.name} attacked {Target.name} but {Target.name} parried your attack!')
-                            damage = self.ATK//2
+                            damage = self.BasicATK//2
                         elif choice == 2:
                             if self.pp1 !=0:
                                 sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name}  but {Target.name} parried your attack!')
@@ -86,7 +86,7 @@ class Characters:
                         if choice == 1:
                             sw.print_slow(f'{self.name} attacked {Target.name}')
                             print('CRITICAL HIT!')
-                            damage = self.ATK*2
+                            damage = self.BasicATK*2
                         elif choice == 2:
                             if self.pp1 !=0:
                                 sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name} !')
@@ -117,7 +117,7 @@ class Characters:
                     elif not parry and not critHit:
                         if choice == 1:
                             sw.print_slow(f'{self.name} attacked {Target.name}')
-                            damage = self.ATK
+                            damage = self.BasicATK
                         elif choice == 2:
                             if self.pp1 !=0:
                                 sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name}!')
