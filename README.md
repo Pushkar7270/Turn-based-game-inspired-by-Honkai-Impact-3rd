@@ -1,53 +1,56 @@
 ## Turn-based-game-inspired-by-Honkai-Impact-3rd
-A Python-based command-line RPG mini-game inspired by Honkai Impact 3rd. This project demonstrates Object-Oriented Programming (OOP) concepts in Python, featuring turn-based combat, RNG mechanics (Critical hits, Dodges, Parries), and a roster of distinct characters.
+A Python-based command-line RPG mini-game inspired by Honkai Impact 3rd. This project demonstrates Object-Oriented Programming (OOP) concepts in Python, featuring turn-based combat, resource management (PP System), and RNG mechanics.
 
 # 📖 About The Project
-* This project simulates a boss battle where the player selects a "Valkyrie" to fight against the boss    Husk:Nihilus. The game utilizes a custom text-rendering engine to simulate a retro RPG feel and employs   probability-based combat mechanics.
+This project simulates a high-stakes boss battle where the player selects a "Valkyrie" to fight against the entity **"Sa"** (from Honkai Impact 3rd Part 1.5). The game utilizes a custom text-rendering engine to simulate a retro RPG feel and employs probability-based combat mechanics.
 
 # ✨ Features
-* *3 Playable Characters*: Choose between Kiana, Mei, and Bronya, each with unique stats for HP, Attack, Speed, and Defense.
-
-* *Dynamic Combat System*:
-* Basic & Special Attacks: Choose your approach to dealing damage.
-* RNG Mechanics: Every turn calculates probabilities for Critical Hits, Dodges, and Parries based on character stats.
-* Boss AI: The boss (Husk:Nihilus) reacts to the player, dealing damage and utilizing the same combat mechanics (Crit/Dodge/Parry) against you.
-* Immersive Text Effect: Custom "slow writing" script to create a typewriter effect for battle logs.
+* **3 Playable Characters**: Choose between Kiana, Mei, and Bronya. Each character now has a **unique moveset** with different skills.
+* **Boss (Sa)**: Fight against the tanky boss "Sa" (9000 HP), who possesses high Dodge/Parry rates and her own set of named special attacks.
+* **PP (Power Point) System**: 
+    * Special moves are no longer unlimited. 
+    * You must manage **PP** (Turn limits) for your powerful skills. 
+    * Once PP runs out, you are forced to use Basic Attacks.
+* **Dynamic Combat**:
+    * **Named Skills**: Use signature moves like *Shamash Unleashed* or *7 Thunders: Rumble*.
+    * **RNG Mechanics**: Every turn calculates probabilities for Critical Hits, Dodges, and Parries based on stats.
+    * **Boss AI**: The boss reacts to the player, selecting randomly from its own pool of 3 devastating moves.
+* **Immersive Text Effect**: Custom "slow writing" script to create a typewriter effect for battle logs.
 
 # 🎮 How to Play
-* *Run the Game*: Execute the main.py script.
-* *Select a Character*:
-* *Kiana*: Balanced stats with high Critical chance.
-* *Mei*: High Speed (Dodge) and balanced offense.
-* *Bronya*: High Defense (Parry) and tanky HP.
-
-# Battle Loop:
-* On your turn, choose to perform a Basic Attack, Special Attack, or Forfeit.
-* Watch the battle log to see if you land a Critical Hit, if the enemy Dodges, or if they Parry your attack.
-* The Boss will retaliate on their turn.
-* Win Condition: Reduce the Boss's HP to 0.
-* Lose Condition: Your HP drops to 0 or you forfeited
+1. **Run the Game**: Execute the `main.py` script.
+2. **Select a Character**:
+    * **Kiana**: High Critical Chance (50%). Moves: *Subspace Lance, Neko Charm, Shamash Unleashed*.
+    * **Mei**: High Speed/Dodge (50%). Moves: *Searing Slash, 7 Thunders: Rumble, Fate Cutter*.
+    * **Bronya**: High Defense/Parry (50%). Moves: *Cognitive Destruction, Selene, Quasi-black hole*.
+3. **Battle Loop**:
+    * On your turn, select an action from the menu:
+        * `1` **Basic Attack**: Standard damage, unlimited use.
+        * `2-4` **Special Skills**: High damage, but consumes **PP**.
+        * `5` **Forfeit**: Surrender the battle immediately.
+    * Watch the battle log for Critical Hits, Dodges, or Parries.
+    * The Boss will retaliate with moves like *Matter Erasure* or *Power of Samsara*.
 
 # ⚔️ Combat Mechanics
-* The game uses a probability list system (scale of 1-10) to determine combat outcomes:
-* Critical Hit: Deals 2x Damage. Determined by the Crit stat.
-* Parry: Reduces incoming damage by 50%. Determined by the DeF (Defense) stat.
-* Dodge: Negates 100% of damage. Determined by the SPD (Speed) stat.
-* Example: If a character has SPD 5, they have a 5/10 (50%) chance to dodge an incoming attack.
+* **PP Management**:
+    * **Move 1 & 2**: 10 Uses (PP) each.
+    * **Move 3 (Ultimate)**: 5 Uses (PP) only. Use them wisely!
+* **Probability System**:
+    * **Critical Hit**: Deals 2x Damage. (Based on Crit stat).
+    * **Parry**: Reduces incoming damage by 50%. (Based on DEF stat).
+    * **Dodge**: Negates 100% of damage. (Based on SPD stat).
+* **Win/Lose Condition**: Reduce "Sa's" HP to 0 to win. You lose if your HP hits 0 or you forfeit.
 
 # 📂 File Structure
-* *main.py*: The entry point of the game. Handles the game loop, character selection, and turn management.
-* *Characters.py*: Defines the Characters class, player stats, and player attack logic.
-* *Boss.py*: Defines the Boss class and the enemy AI logic.
-* *slow_writing.py*: A utility module that handles the typewriter text effect for console output.
+* **main.py**: The entry point. Handles the game loop, stats initialization, and turn logic.
+* **Characters.py**: Defines the `Characters` class, including the new PP tracking and input validation logic.
+* **Boss.py**: Defines the `Boss` class with specific AI logic and enemy movesets.
+* **slow_writing.py**: Utility module for the typewriter text effect.
 
 # 🛠️ Installation & Requirements
-* Prerequisites
-* Python 3.x
-
-**Running the Game**
-* Clone the repository or download the files.
-* Navigate to the project directory.
-* Run the main script:
-* Bash
-* python main.py
-* *Note*: *No external libraries* (like pip packages) are required. The game uses standard Python libraries (random, time).
+* **Prerequisites**: Python 3.x
+* **Running the Game**:
+    1. Clone the repository or download the files.
+    2. Navigate to the project directory.
+    3. Run the command: `python main.py`
+    *Note: No external libraries (like pip packages) are required. The game uses standard Python libraries (random, time).*
