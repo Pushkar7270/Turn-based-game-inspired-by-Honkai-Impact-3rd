@@ -6,7 +6,7 @@ def main():
     kiana = ch.Characters('Kiana',5600,5600,440,490,500,800,5,4,2,10,10,5,'Subspace lance','Neko Charm','Shamash Unleashed')
     mei = ch.Characters('Mei', 5500,5500,470,480,500,780,3,5,4,10,10,5,'Searing slash','7 Thunders:Rumble','Fate cutter')
     bronya =ch.Characters('Bronya', 6000,6000,550,500,570,800,3,2,5,10,10,5,'Cognitive destruction','Selene','Quasi-black hole')
-    Boss_enemy = bs.Boss('Sa',9000,9000,230,300,450,620,1,3,3,'Matter erasure','Time acceleration','Power of Samsara')
+    boss_enemy = bs.Boss('Sa',9000,9000,230,300,450,620,1,3,3,'Matter erasure','Time acceleration','Power of Samsara')
     try:
         while True:
             print('Welcome to the simulation fight')
@@ -35,22 +35,22 @@ def main():
             turn = player
             while True:
                 sw.print_slow(f'{player.name}\'s hp:{player.HP}')
-                sw.print_slow(f'{Boss_enemy.name}\'s hp:{Boss_enemy.HP}')
+                sw.print_slow(f'{boss_enemy.name}\'s hp:{boss_enemy.HP}')
                 if turn == player:
                     sw.print_slow('Your turn')
-                    player.Attack(Boss_enemy)
-                    turn = Boss_enemy
+                    player.Attack(boss_enemy)
+                    turn = boss_enemy
                     print('------------------------------\n')
                     time.sleep(1)
-                elif turn == Boss_enemy:
-                    Boss_enemy.Attack(player)
+                elif turn == boss_enemy:
+                    boss_enemy.Attack(player)
                     turn = player
                     print('------------------------------\n')
                     time.sleep(1)
                 if player.HP <= 0:
                     sw.print_slow('You Lost!')
                     break
-                elif Boss_enemy.HP <=0:
+                elif boss_enemy.HP <=0:
                     sw.print_slow('You Won!')
                     break  
     except ValueError:
