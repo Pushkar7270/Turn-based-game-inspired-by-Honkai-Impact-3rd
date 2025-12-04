@@ -3,10 +3,10 @@ import Characters as ch
 import Boss as bs
 import slow_writing as sw
 def main():
-    kiana = ch.Characters('Kiana',4400,4400,350,400,420,550,5,4,2,10,10,5,'Subspace lance','Neko Charm','Shamash Unleashed')
-    mei = ch.Characters('Mei', 3000,3000,320,350,400,500,3,5,4,10,10,5,'Searing slash','7 Thunders:Rumble','Fate cutter')
-    bronya =ch.Characters('Bronya', 4900,4900,390,470,450,600,3,2,5,10,10,5,'Cognitive destruction','Selene','Quasi-black hole')
-    Boss_enemy = bs.Boss('Sa',10000,10000,230,300,450,620,3,3,3,'Matter erasure','Time acceleration','Power of Samsara')
+    kiana = ch.Characters('Kiana',5600,5600,440,490,500,800,5,4,2,10,10,5,'Subspace lance','Neko Charm','Shamash Unleashed')
+    mei = ch.Characters('Mei', 5500,5500,470,480,500,780,3,5,4,10,10,5,'Searing slash','7 Thunders:Rumble','Fate cutter')
+    bronya =ch.Characters('Bronya', 6000,6000,550,500,570,800,3,2,5,10,10,5,'Cognitive destruction','Selene','Quasi-black hole')
+    Boss_enemy = bs.Boss('Sa',9000,9000,230,300,450,620,1,3,3,'Matter erasure','Time acceleration','Power of Samsara')
     try:
         while True:
             print('Welcome to the simulation fight')
