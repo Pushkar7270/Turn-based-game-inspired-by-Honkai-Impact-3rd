@@ -1,11 +1,11 @@
 import random
 import slow_writing as sw
 class Boss:
-    def __init__(self, name , HP , MAXHP , BasicATK,Move1,Move2,Move3,Crit,SPD,DeF,move1_name,move2_name,move3_name):
+    def __init__(self, name , HP , MAXHP , basicATK,Move1,Move2,Move3,Crit,SPD,DeF,move1_name,move2_name,move3_name):
             self.name = name
             self.HP = HP
             self.MAXHP = MAXHP
-            self.BasicATK = BasicATK
+            self.basicATK = basicATK
             self.Move1 = Move1 
             self.Move2 = Move2
             self.Move3 = Move3
@@ -40,7 +40,7 @@ class Boss:
             if parry:
                 if choiced == 1:
                     sw.print_slow(f'{self.name} attacked {Target.name} but {Target.name} parried the attack!')
-                    damage = self.BasicATK//2
+                    damage = self.basicATK//2
                 elif choiced == 2:
                     sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name} but {Target.name} parried the attack')
                     damage = self.Move1//2
@@ -54,7 +54,7 @@ class Boss:
                 if choiced == 1:
                     sw.print_slow(f'{self.name} attacked {Target.name}')
                     sw.print_slow('CRITICAL HIT!')
-                    damage = self.BasicATK*2
+                    damage = self.basicATK*2
                 elif choiced == 2:
                     sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name}')
                     damage = self.Move1*2
@@ -67,7 +67,7 @@ class Boss:
             elif not parry and not critHit:
                 if choiced == 1:
                     sw.print_slow(f'{self.name} attacked {Target.name}')
-                    damage = self.BasicATK
+                    damage = self.basicATK
                 elif choiced == 2:
                     sw.print_slow(f'{self.name} used {self.move1_name} on {Target.name}')
                     damage = self.Move1
