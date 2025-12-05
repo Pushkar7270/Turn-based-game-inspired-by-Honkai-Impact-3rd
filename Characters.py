@@ -25,7 +25,7 @@ class Characters:
                 print('1.Basic Attack')
                 print(f'2.{self.move1_name}:{self.pp1} turns left')
                 print(f'3.{self.move2_name}:{self.pp2} turms left')
-                print(f'4. {self.move3_name}:{self.pp3} turns left')
+                print(f'4.{self.move3_name}:{self.pp3} turns left')
                 print('5. Forfeit')
                 choice = int(input('Enter your choice: '))
                 if choice == 5:
