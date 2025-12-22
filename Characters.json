@@ -1,0 +1,152 @@
+{
+    "Characters": [
+        {
+            "name": "Kiana Kaslana",
+            "hp": 5600,
+            "max_hp": 5600,
+            "moves": [
+                {
+                    "name": "Basic Attack",
+                    "damage": 440,
+                    "pp": -1,
+                    "max_pp": -1
+                },
+                {
+                    "name": "Subspace Lance",
+                    "damage": 490,
+                    "pp": 10,
+                    "max_pp": 10
+                },
+                {
+                    "name": "Neko Charm",
+                    "damage": 500,
+                    "pp": 10,
+                    "max_pp": 10
+                },
+                {
+                    "name": "Shamash Unleashed",
+                    "damage": 800,
+                    "pp": 5,
+                    "max_pp": 5
+                }
+            ],
+            "crit_rate": 4,
+            "speed": 4,
+            "defence": 2,
+            "playable": true
+        },
+        {
+            "name": "Mei",
+            "hp": 5500,
+            "max_hp": 5500,
+            "moves": [
+                {
+                    "name": "Basic Attack",
+                    "damage": 350,
+                    "pp": -1,
+                    "max_pp": -1
+                },
+                {
+                    "name": "Searing slash",
+                    "damage": 400,
+                    "pp": 10,
+                    "max_pp": 10
+                },
+                {
+                    "name": "7 Thunders:Rumble",
+                    "damage": 500,
+                    "pp": 10,
+                    "max_pp": 10
+                },
+                {
+                    "name": "Fate cutter",
+                    "damage": 780,
+                    "pp": 5,
+                    "max_pp": 5
+                },
+                {
+                    "name": "Fate cutter",
+                    "damage": 780,
+                    "pp": 5,
+                    "max_pp": 5
+                }
+            ],
+            "crit_rate": 3,
+            "speed": 4,
+            "defence": 3,
+            "playable": true
+        },
+        {
+            "name": "Bronya",
+            "hp": 6000,
+            "max_hp": 6000,
+            "moves": [
+                {
+                    "name": "Basic Attack",
+                    "damage": 550,
+                    "pp": -1,
+                    "max_pp": -1
+                },
+                {
+                    "name": "Cognitive destruction",
+                    "damage": 400,
+                    "pp": 10,
+                    "max_pp": 10
+                },
+                {
+                    "name": "Selene",
+                    "damage": 570,
+                    "pp": 10,
+                    "max_pp": 10
+                },
+                {
+                    "name": "Quasi-black hole",
+                    "damage": 800,
+                    "pp": 5,
+                    "max_pp": 5
+                }
+            ],
+            "crit_rate": 3,
+            "speed": 2,
+            "defence": 5,
+            "playable": true
+        }
+    ],
+    "Boss": [
+        {
+            "name": "Sa",
+            "hp": 9000,
+            "max_hp": 9000,
+            "moves": [
+                {
+                    "name": "Basic Attack",
+                    "damage": 350,
+                    "pp": -1,
+                    "max_pp": -1
+                },
+                {
+                    "name": "Matter erasure",
+                    "damage": 400,
+                    "pp": -1,
+                    "max_pp": -1
+                },
+                {
+                    "name": "Time acceleration",
+                    "damage": 650,
+                    "pp": -1,
+                    "max_pp": -1
+                },
+                {
+                    "name": "Power of Samsara",
+                    "damage": 850,
+                    "pp": -1,
+                    "max_pp": -1
+                }
+            ],
+            "crit_rate": 1,
+            "speed": 3,
+            "defence": 3,
+            "playable": false
+        }
+    ]
+}
