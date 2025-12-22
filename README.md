@@ -1,56 +1,33 @@
-## Turn-based-game-inspired-by-Honkai-Impact-3rd
-A Python-based command-line RPG mini-game inspired by Honkai Impact 3rd. This project demonstrates Object-Oriented Programming (OOP) concepts in Python, featuring turn-based combat, resource management (PP System), and RNG mechanics.
+## ⚔️ Honkai RPG: Data-Driven Turn-Based Engine
+- A professional refactoring of a Python-based CLI RPG inspired by Honkai Impact 3rd. This project demonstrates a transition from a hardcoded script to a scalable, Data-Driven Architecture using Object-Oriented Programming (OOP) and JSON serialization.
 
-# 📖 About The Project
-This project simulates a high-stakes boss battle where the player selects a "Valkyrie" to fight against the entity **"Sa"** (from Honkai Impact 3rd Part 1.5). The game utilizes a custom text-rendering engine to simulate a retro RPG feel and employs probability-based combat mechanics.
+## 🚀 The Refactoring Journey (Legacy vs. Modern)
+- This repository contains two versions of the game to showcase architectural growth:
+- *Legacy Version (/old_code)*: A beginner-friendly, hardcoded script where character stats and logic are intertwined.
+- *Refactored Version (Root)*: An intermediate-level engine that decouples game logic from character data using JSON "databases".
 
-# ✨ Features
-* **3 Playable Characters**: Choose between Kiana, Mei, and Bronya. Each character now has a **unique moveset** with different skills.
-* **Boss (Sa)**: Fight against the tanky boss "Sa" (9000 HP), who possesses high Dodge/Parry rates and her own set of named special attacks.
-* **PP (Power Point) System**: 
-    * Special moves are no longer unlimited. 
-    * You must manage **PP** (Turn limits) for your powerful skills. 
-    * Once PP runs out, you are forced to use Basic Attacks.
-* **Dynamic Combat**:
-    * **Named Skills**: Use signature moves like *Shamash Unleashed* or *7 Thunders: Rumble*.
-    * **RNG Mechanics**: Every turn calculates probabilities for Critical Hits, Dodges, and Parries based on stats.
-    * **Boss AI**: The boss reacts to the player, selecting randomly from its own pool of 3 devastating moves.
-* **Immersive Text Effect**: Custom "slow writing" script to create a typewriter effect for battle logs.
+## ✨ Key Technical Features
+- *OOP & Dataclasses*: Utilizes Python @dataclass for clean, robust entity management (HP, Speed, Defense, Crit).
+- *JSON Serialization*: All Valkyrie and Boss stats are externalized in Characters.json. The engine "rehydrates" this data into Python objects at runtime.
+- *Scalable Move System*: A custom Move class handles damage and PP (Power Points) management independently for every entity.
+- *Internal State Logic*: Uses __post_init__ to automatically calculate max_hp and max_pp during object creation.
+- *Dynamic Battle Engine*: A centralized Battle_logic controller that handles turn-order, RNG calculations (Crit/Dodge/Parry), and win/loss conditions.
 
-# 🎮 How to Play
-1. **Run the Game**: Execute the `main.py` script.
-2. **Select a Character**:
-    * **Kiana**: High Critical Chance (50%). Moves: *Subspace Lance, Neko Charm, Shamash Unleashed*.
-    * **Mei**: High Speed/Dodge (50%). Moves: *Searing Slash, 7 Thunders: Rumble, Fate Cutter*.
-    * **Bronya**: High Defense/Parry (50%). Moves: *Cognitive Destruction, Selene, Quasi-black hole*.
-3. **Battle Loop**:
-    * On your turn, select an action from the menu:
-        * `1` **Basic Attack**: Standard damage, unlimited use.
-        * `2-4` **Special Skills**: High damage, but consumes **PP**.
-        * `5` **Forfeit**: Surrender the battle immediately.
-    * Watch the battle log for Critical Hits, Dodges, or Parries.
-    * The Boss will retaliate with moves like *Matter Erasure* or *Power of Samsara*.
+## 📂 Project Architecture
+- *New_main.py*: The game controller. Manages user selection and initiates the battle sequence.
+- *Entites.py*: The Data Models. Contains the Entity and Move classes that define game characters.
+- *File_handler.py*: The Data Access Layer. Safely handles JSON loading and saving to prevent data corruption.
+- *available_characters.py*: A developer tool used to generate and update the Characters.json "database".
+- *Game_work_flow.py*: Contains the core combat algorithm and turn-based logic.
 
-# ⚔️ Combat Mechanics
-* **PP Management**:
-    * **Move 1 & 2**: 10 Uses (PP) each.
-    * **Move 3 (Ultimate)**: 5 Uses (PP) only. Use them wisely!
-* **Probability System**:
-    * **Critical Hit**: Deals 2x Damage. (Based on Crit stat).
-    * **Parry**: Reduces incoming damage by 50%. (Based on DEF stat).
-    * **Dodge**: Negates 100% of damage. (Based on SPD stat).
-* **Win/Lose Condition**: Reduce "Sa's" HP to 0 to win. You lose if your HP hits 0 or you forfeit.
+## 🎮 How it Works (Under the Hood)
+- *Data Loading*: The engine calls get_game_entities() to parse Characters.json.
+- *Object Rehydration*: Dictionary data is converted into Entity and Move objects.
+- *Deployment*: The user selects a Valkyrie, and the engine injects those specific stats into the Battle_logic.
+- *Simulation*: Combat is simulated using probability-based RNG (Crit/Dodge) until an HP value reaches zero.
 
-# 📂 File Structure
-* **main.py**: The entry point. Handles the game loop, stats initialization, and turn logic.
-* **Characters.py**: Defines the `Characters` class, including the new PP tracking and input validation logic.
-* **Boss.py**: Defines the `Boss` class with specific AI logic and enemy movesets.
-* **slow_writing.py**: Utility module for the typewriter text effect.
-
-# 🛠️ Installation & Requirements
-* **Prerequisites**: Python 3.x
-* **Running the Game**:
-    1. Clone the repository or download the files.
-    2. Navigate to the project directory.
-    3. Run the command: `python main.py`
-    *Note: No external libraries (like pip packages) are required. The game uses standard Python libraries (random, time).*
+## 🛠️ Installation & Setup
+- *Prerequisites*: Python 3.11+ (uses modern dataclass features).
+- *Clone*: git clone [(https://github.com/Pushkar7270/Turn-based-game-inspired-by-Honkai-Impact-3rd)]
+- *Initialize Data*: Run python available_characters.py to generate the initial character database.
+- *Launch*: Run python New_main.py to start the game.
