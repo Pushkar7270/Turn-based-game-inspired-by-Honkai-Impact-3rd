@@ -147,6 +147,41 @@
             "speed": 3,
             "defence": 3,
             "playable": false
+        },
+        {
+            "name": "Sirin",
+            "hp": 9500,
+            "max_hp": 9500,
+            "moves": [
+                {
+                    "name": "Basic Attack",
+                    "damage": 340,
+                    "pp": -1,
+                    "max_pp": -1
+                },
+                {
+                    "name": "subspace lance barrage",
+                    "damage": 430,
+                    "pp": -1,
+                    "max_pp": -1
+                },
+                {
+                    "name": "Dimension break",
+                    "damage": 650,
+                    "pp": -1,
+                    "max_pp": -1
+                },
+                {
+                    "name": "Space tear",
+                    "damage": 1000,
+                    "pp": -1,
+                    "max_pp": -1
+                }
+            ],
+            "crit_rate": 3,
+            "speed": 2,
+            "defence": 4,
+            "playable": false
         }
     ]
 }

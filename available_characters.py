@@ -57,7 +57,6 @@ mei_moveset = [
         damage=780,
         pp=5,
     ),
-    Move(name="Fate cutter", damage=780, pp=5),
 ]
 
 mei = Entity(
@@ -116,11 +115,41 @@ sa_boss = Entity(
     defence=3,
     playable=False,
 )
-
+sirin_moveset = [
+    Move(
+        name="Basic Attack",
+        damage=340,
+        pp=-1,
+    ),
+    Move(
+        name="subspace lance barrage",
+        damage=430,
+        pp=-1,
+    ),
+    Move(
+        name="Dimension break",
+        damage=650,
+        pp=-1,
+    ),
+    Move(
+        name="Space tear",
+        damage=1000,
+        pp=-1,
+    ),
+]
+sirin = Entity(
+    name="Sirin",
+    hp=9500,
+    moves=sirin_moveset,
+    crit_rate=3,
+    speed=2,
+    defence=4,
+    playable=False,
+)
 
 game_data = {
     "characters": [asdict(kiana), asdict(mei), asdict(bronya)],
-    "boss": [asdict(sa_boss)],
+    "boss": [asdict(sa_boss), asdict(sirin)],
 }
 arranged_game_data = {
     "Characters": [char for char in game_data["characters"]],
