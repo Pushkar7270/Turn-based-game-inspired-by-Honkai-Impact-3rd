@@ -113,9 +113,10 @@ class Battlewindow(ctk.CTk):
 
     def create_move_buttons(self):
         for i, move in enumerate(self.player.moves[:]):
+            pp_text = "∞" if move.pp == -1 else str(move.pp)
             button = ctk.CTkButton(
                 self.moves_container,
-                text=f"{move.name.upper()}\n(PP: {move.pp})",
+                text=f"{move.name.upper()}\n(PP: {pp_text})",
                 font=("Arial", 14, "bold"),
                 fg_color=self.cfg.Btn_move,
                 command=lambda m=move: self.handle_click(m),
@@ -127,8 +128,8 @@ class Battlewindow(ctk.CTk):
         if self.player.hp <= 0 or self.boss.hp <= 0:
             return  # Battle is over
             
-        # Check if move has PP left
-        if move.pp <= 0:
+        # Check if move has PP left (allow -1 for infinite PP)
+        if move.pp == 0:
             self.type_message(f"{move.name} is out of PP!")
             return
             
@@ -170,9 +171,10 @@ class Battlewindow(ctk.CTk):
         for i, widget in enumerate(self.moves_container.winfo_children()):
             if isinstance(widget, ctk.CTkButton) and i < len(self.player.moves):
                 move = self.player.moves[i]
-                widget.configure(text=f"{move.name.upper()}\n(PP: {move.pp})")
-                # Disable button if no PP left
-                if move.pp <= 0:
+                pp_text = "∞" if move.pp == -1 else str(move.pp)
+                widget.configure(text=f"{move.name.upper()}\n(PP: {pp_text})")
+                # Only disable button if PP is exactly 0 (not -1)
+                if move.pp == 0:
                     widget.configure(state="disabled")
                     
     def disable_buttons(self):
