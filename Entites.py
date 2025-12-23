@@ -23,6 +23,7 @@ class Entity:  # __init__ method is created in the background because of datacla
     speed: int
     defence: int
     playable: bool = False
+    image_path: str = "asset/default.png"
 
     @property  # This is a decorator that allows you to define a method that can be accessed like an attribute.
     def is_alive(self):

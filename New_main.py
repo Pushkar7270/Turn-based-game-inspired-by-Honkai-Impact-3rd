@@ -1,6 +1,7 @@
 import File_handler as fh
 from Entites import Entity, Move
-from Game_work_flow import Battle_logic
+from UI.Battle_window import Battlewindow
+from UI.selection_window import SelectionWindow
 
 
 def get_game_entities(filename):
@@ -22,57 +23,42 @@ def get_game_entities(filename):
             speed=entity_dict["speed"],
             defence=entity_dict["defence"],
             playable=entity_dict["playable"],
+            # Ensure your JSON includes this key pointing to the assets folder
+            image_path=entity_dict.get("image_path", "assets/placeholder.png"),
         )
 
     playable_characters = [dict_to_entity(char) for char in entities["Characters"]]
-    boss = [dict_to_entity(boss) for boss in entities["Boss"]]
-    return playable_characters, boss
+    bosses = [dict_to_entity(b) for b in entities["Boss"]]
+    return playable_characters, bosses
 
 
 def main():
+    # 1. Load Data
     characters, bosses = get_game_entities("Characters.json")
     if not characters or not bosses:
-        print("No characters or bosses found")
-        return False
-    while True:
-        print("\n--- Welcome to the turn based rpg---")
-        print("Choose your valkyrie")
-        for i, character in enumerate(characters):
-            print(
-                f"{i + 1}. {character.name}, {character.hp},{character.moves}, {character.speed} , {character.defence}, {character.crit_rate},"
-            )
-        print(f"{len(characters) + 1}. exit")
-        try:
-            choice = int(input("Enter your choice: "))
-        except ValueError:
-            print("Invalid input, please enter a number only")
-            continue
-        if choice == (len(characters) + 1):
-            print("Exiting the game...")
-            break
-        if choice < 1 or choice > len(characters):
-            print("Invalid Valkyrie choice! Please pick a number from the list.")
-            continue
-        while True:
-            print("Choose your boss")
-            for i, boss in enumerate(bosses):
-                print(f"{i + 1}. {boss.name}")
-            print(f"{len(bosses) + 1}. Back to Valkyrie Selection")
-            try:
-                boss_choice = int(input("Enter your choice: "))
-                if boss_choice == (len(bosses) + 1):
-                    break
-                if 1 <= boss_choice <= len(bosses):
-                    Battle = Battle_logic(
-                        characters[choice - 1], bosses[boss_choice - 1]
-                    )
-                    Battle.start_battle()
-                    characters, bosses = get_game_entities("Characters.json")
-                    break
-                else:
-                    raise ValueError
-            except ValueError:
-                print("Invalid input, please enter a number only")
+        return
+
+    # 2. GUI Flow: Valkyrie Selection
+    # This pauses until the user clicks 'SELECT' or closes the window
+    valk_menu = SelectionWindow(characters, "SELECT YOUR VALKYRIE")
+    selected_valk = valk_menu.get_result()
+
+    if not selected_valk:
+        print("Valkyrie selection cancelled.")
+        return
+
+    # 3. GUI Flow: Boss Selection
+    boss_menu = SelectionWindow(bosses, "SELECT YOUR TARGET")
+    selected_boss = boss_menu.get_result()
+
+    if not selected_boss:
+        print("Boss selection cancelled.")
+        return
+
+    # 4. GUI Flow: Start Battle Interface
+    print(f"Starting Battle: {selected_valk.name} vs {selected_boss.name}")
+    battle_ui = Battlewindow(selected_valk, selected_boss)
+    battle_ui.start()
 
 
 if __name__ == "__main__":

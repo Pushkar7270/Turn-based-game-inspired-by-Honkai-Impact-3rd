@@ -35,6 +35,7 @@ kiana = Entity(
     speed=4,
     defence=2,
     playable=True,
+    image_path="assets/Kiana.jpeg",
 )
 mei_moveset = [
     Move(
@@ -67,6 +68,7 @@ mei = Entity(
     speed=4,
     defence=3,
     playable=True,
+    image_path="assets/mei.jpeg",
 )
 bronya_moveset = [
     Move(
@@ -92,6 +94,7 @@ bronya = Entity(
     speed=2,
     defence=5,
     playable=True,
+    image_path="assets/bronya.jpeg",
 )
 
 sa_moveset = [
@@ -114,6 +117,7 @@ sa_boss = Entity(
     speed=3,
     defence=3,
     playable=False,
+    image_path="assets/sa.jpeg",
 )
 sirin_moveset = [
     Move(
@@ -145,6 +149,7 @@ sirin = Entity(
     speed=2,
     defence=4,
     playable=False,
+    image_path="assets/sirin.jpeg",
 )
 
 game_data = {

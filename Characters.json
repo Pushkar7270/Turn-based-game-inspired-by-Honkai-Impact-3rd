@@ -33,7 +33,8 @@
             "crit_rate": 4,
             "speed": 4,
             "defence": 2,
-            "playable": true
+            "playable": true,
+            "image_path": "assets/Kiana.jpeg"
         },
         {
             "name": "Mei",
@@ -63,18 +64,13 @@
                     "damage": 780,
                     "pp": 5,
                     "max_pp": 5
-                },
-                {
-                    "name": "Fate cutter",
-                    "damage": 780,
-                    "pp": 5,
-                    "max_pp": 5
                 }
             ],
             "crit_rate": 3,
             "speed": 4,
             "defence": 3,
-            "playable": true
+            "playable": true,
+            "image_path": "assets/mei.jpeg"
         },
         {
             "name": "Bronya",
@@ -109,7 +105,8 @@
             "crit_rate": 3,
             "speed": 2,
             "defence": 5,
-            "playable": true
+            "playable": true,
+            "image_path": "assets/bronya.jpeg"
         }
     ],
     "Boss": [
@@ -146,7 +143,8 @@
             "crit_rate": 1,
             "speed": 3,
             "defence": 3,
-            "playable": false
+            "playable": false,
+            "image_path": "assets/sa.jpeg"
         },
         {
             "name": "Sirin",
@@ -181,7 +179,8 @@
             "crit_rate": 3,
             "speed": 2,
             "defence": 4,
-            "playable": false
+            "playable": false,
+            "image_path": "assets/sirin.jpeg"
         }
     ]
 }
