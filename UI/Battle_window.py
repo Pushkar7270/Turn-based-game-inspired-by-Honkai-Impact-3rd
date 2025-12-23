@@ -113,7 +113,7 @@ class Battlewindow(ctk.CTk):
 
     def create_move_buttons(self):
         for i, move in enumerate(self.player.moves[:]):
-            pp_text = "∞" if move.pp == -1 else str(move.pp)
+            pp_text = "∞" if move.pp < 0 else str(move.pp)
             button = ctk.CTkButton(
                 self.moves_container,
                 text=f"{move.name.upper()}\n(PP: {pp_text})",
@@ -171,9 +171,9 @@ class Battlewindow(ctk.CTk):
         for i, widget in enumerate(self.moves_container.winfo_children()):
             if isinstance(widget, ctk.CTkButton) and i < len(self.player.moves):
                 move = self.player.moves[i]
-                pp_text = "∞" if move.pp == -1 else str(move.pp)
+                pp_text = "∞" if move.pp < 0 else str(move.pp)
                 widget.configure(text=f"{move.name.upper()}\n(PP: {pp_text})")
-                # Only disable button if PP is exactly 0 (not -1)
+                # Only disable button if PP is exactly 0 (not negative)
                 if move.pp == 0:
                     widget.configure(state="disabled")
                     

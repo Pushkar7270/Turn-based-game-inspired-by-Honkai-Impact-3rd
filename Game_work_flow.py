@@ -21,15 +21,18 @@ class Battle_logic:
         elif parry_chance <= defender.defence:
             msg = f"{attacker.name} used {selected_move.name} but {defender.name} parried the attack"
             total_damage = damage // 2
-            selected_move.pp -= 1
+            if selected_move.pp > 0:  # Only decrement if not infinite
+                selected_move.pp -= 1
         elif crit_chance <= attacker.crit_rate:
             msg = f"{attacker.name} used {selected_move.name} and dealt a critical hit!"
             total_damage = damage * 2
-            selected_move.pp -= 1
+            if selected_move.pp > 0:  # Only decrement if not infinite
+                selected_move.pp -= 1
         else:
             msg = f"{attacker.name} used {selected_move.name} on {defender.name}"
             total_damage = damage
-            selected_move.pp -= 1
+            if selected_move.pp > 0:  # Only decrement if not infinite
+                selected_move.pp -= 1
         if total_damage > 0:
             defender.take_damage(total_damage)
         if not defender.is_alive:
