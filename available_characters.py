@@ -88,7 +88,7 @@ bronya_moveset = [
 
 bronya = Entity(
     name="Bronya",
-    hp=6000,
+    hp=6500,
     moves=bronya_moveset,
     crit_rate=3,
     speed=2,
@@ -145,7 +145,7 @@ sirin = Entity(
     name="Sirin",
     hp=9500,
     moves=sirin_moveset,
-    crit_rate=3,
+    crit_rate=1,
     speed=2,
     defence=4,
     playable=False,
