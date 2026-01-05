@@ -23,7 +23,7 @@ class SelectionWindow(ctk.CTk):
         self.cfg = Selectionstyle()
 
         # window config
-        self.title(title_text)
+        self.title("Project:jrpg")
         self.geometry("1000x750")
         self.configure(fg_color=self.cfg.Bg_Navy)
         self.entities = entities
