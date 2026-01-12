@@ -28,7 +28,7 @@ def get_game_entities(filename):
             speed=entity_dict["speed"],
             defence=entity_dict["defence"],
             playable=entity_dict["playable"],
-            image_path=entity_dict.get("image_path", "assets/placeholder.png"),
+            image_path=entity_dict.get("image_path"),
         )
 
     playable_characters = [dict_to_entity(char) for char in entities["Characters"]]
