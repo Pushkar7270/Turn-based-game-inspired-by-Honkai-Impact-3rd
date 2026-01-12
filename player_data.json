@@ -1,0 +1,1134 @@
+[
+  {
+    "battle_id": 1,
+    "timestamp": "2026-01-12T09:23:22.187459",
+    "match_up": "Kiana Kaslana vs Sirin",
+    "player_stats": {
+      "name": "Kiana Kaslana",
+      "hp": 5600,
+      "speed": 4,
+      "crit_rate": 4,
+      "defence": 2
+    },
+    "boss_stats": {
+      "name": "Sirin",
+      "hp": 9500,
+      "speed": 2,
+      "crit_rate": 3,
+      "defence": 4
+    },
+    "winner": "Sirin",
+    "turns": [
+      {
+        "turn": 1,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed but Sirin dodged it!",
+        "target_hp_remaining": 9500
+      },
+      {
+        "turn": 2,
+        "actor": "Player",
+        "move_used": "Subspace Lance",
+        "damage_base": 490,
+        "result_log": "Kiana Kaslana used Subspace Lance and dealt a critical hit!",
+        "target_hp_remaining": 8520
+      },
+      {
+        "turn": 3,
+        "actor": "Player",
+        "move_used": "Neko Charm",
+        "damage_base": 500,
+        "result_log": "Kiana Kaslana used Neko Charm on Sirin",
+        "target_hp_remaining": 8020
+      },
+      {
+        "turn": 4,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed but Sirin parried the attack",
+        "target_hp_remaining": 7620
+      },
+      {
+        "turn": 5,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack on Kiana Kaslana",
+        "target_hp_remaining": 5260
+      },
+      {
+        "turn": 6,
+        "actor": "Player",
+        "move_used": "Subspace Lance",
+        "damage_base": 490,
+        "result_log": "Kiana Kaslana used Subspace Lance but Sirin dodged it!",
+        "target_hp_remaining": 7620
+      },
+      {
+        "turn": 7,
+        "actor": "Boss",
+        "move_used": "subspace lance barrage",
+        "damage_base": 430,
+        "result_log": "Sirin used subspace lance barrage on Kiana Kaslana",
+        "target_hp_remaining": 4830
+      },
+      {
+        "turn": 8,
+        "actor": "Player",
+        "move_used": "Neko Charm",
+        "damage_base": 500,
+        "result_log": "Kiana Kaslana used Neko Charm but Sirin parried the attack",
+        "target_hp_remaining": 7370
+      },
+      {
+        "turn": 9,
+        "actor": "Player",
+        "move_used": "Neko Charm",
+        "damage_base": 500,
+        "result_log": "Kiana Kaslana used Neko Charm on Sirin",
+        "target_hp_remaining": 6870
+      },
+      {
+        "turn": 10,
+        "actor": "Boss",
+        "move_used": "Space tear",
+        "damage_base": 1000,
+        "result_log": "Sirin used Space tear but Kiana Kaslana dodged it!",
+        "target_hp_remaining": 4830
+      },
+      {
+        "turn": 11,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed but Sirin parried the attack",
+        "target_hp_remaining": 6470
+      },
+      {
+        "turn": 12,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack and dealt a critical hit!",
+        "target_hp_remaining": 4150
+      },
+      {
+        "turn": 13,
+        "actor": "Player",
+        "move_used": "Subspace Lance",
+        "damage_base": 490,
+        "result_log": "Kiana Kaslana used Subspace Lance on Sirin",
+        "target_hp_remaining": 5980
+      },
+      {
+        "turn": 14,
+        "actor": "Boss",
+        "move_used": "Space tear",
+        "damage_base": 1000,
+        "result_log": "Sirin used Space tear but Kiana Kaslana dodged it!",
+        "target_hp_remaining": 4150
+      },
+      {
+        "turn": 15,
+        "actor": "Player",
+        "move_used": "Neko Charm",
+        "damage_base": 500,
+        "result_log": "Kiana Kaslana used Neko Charm but Sirin parried the attack",
+        "target_hp_remaining": 5730
+      },
+      {
+        "turn": 16,
+        "actor": "Boss",
+        "move_used": "Space tear",
+        "damage_base": 1000,
+        "result_log": "Sirin used Space tear on Kiana Kaslana",
+        "target_hp_remaining": 3150
+      },
+      {
+        "turn": 17,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack but Kiana Kaslana dodged it!",
+        "target_hp_remaining": 3150
+      },
+      {
+        "turn": 18,
+        "actor": "Player",
+        "move_used": "Basic Attack",
+        "damage_base": 440,
+        "result_log": "Kiana Kaslana used Basic Attack on Sirin",
+        "target_hp_remaining": 5290
+      },
+      {
+        "turn": 19,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack but Kiana Kaslana dodged it!",
+        "target_hp_remaining": 3150
+      },
+      {
+        "turn": 20,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed on Sirin",
+        "target_hp_remaining": 4490
+      },
+      {
+        "turn": 21,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack and dealt a critical hit!",
+        "target_hp_remaining": 2470
+      },
+      {
+        "turn": 22,
+        "actor": "Player",
+        "move_used": "Subspace Lance",
+        "damage_base": 490,
+        "result_log": "Kiana Kaslana used Subspace Lance but Sirin dodged it!",
+        "target_hp_remaining": 4490
+      },
+      {
+        "turn": 23,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack on Kiana Kaslana",
+        "target_hp_remaining": 2130
+      },
+      {
+        "turn": 24,
+        "actor": "Player",
+        "move_used": "Neko Charm",
+        "damage_base": 500,
+        "result_log": "Kiana Kaslana used Neko Charm but Sirin parried the attack",
+        "target_hp_remaining": 4240
+      },
+      {
+        "turn": 25,
+        "actor": "Boss",
+        "move_used": "subspace lance barrage",
+        "damage_base": 430,
+        "result_log": "Sirin used subspace lance barrage but Kiana Kaslana dodged it!",
+        "target_hp_remaining": 2130
+      },
+      {
+        "turn": 26,
+        "actor": "Player",
+        "move_used": "Basic Attack",
+        "damage_base": 440,
+        "result_log": "Kiana Kaslana used Basic Attack on Sirin",
+        "target_hp_remaining": 3800
+      },
+      {
+        "turn": 27,
+        "actor": "Boss",
+        "move_used": "subspace lance barrage",
+        "damage_base": 430,
+        "result_log": "Sirin used subspace lance barrage but Kiana Kaslana parried the attack",
+        "target_hp_remaining": 1915
+      },
+      {
+        "turn": 28,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed but Sirin parried the attack",
+        "target_hp_remaining": 3400
+      },
+      {
+        "turn": 29,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack but Kiana Kaslana dodged it!",
+        "target_hp_remaining": 1915
+      },
+      {
+        "turn": 30,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed but Sirin dodged it!",
+        "target_hp_remaining": 3400
+      },
+      {
+        "turn": 31,
+        "actor": "Boss",
+        "move_used": "subspace lance barrage",
+        "damage_base": 430,
+        "result_log": "Sirin used subspace lance barrage on Kiana Kaslana",
+        "target_hp_remaining": 1485
+      },
+      {
+        "turn": 32,
+        "actor": "Player",
+        "move_used": "Subspace Lance",
+        "damage_base": 490,
+        "result_log": "Kiana Kaslana used Subspace Lance but Sirin dodged it!",
+        "target_hp_remaining": 3400
+      },
+      {
+        "turn": 33,
+        "actor": "Boss",
+        "move_used": "Dimension break",
+        "damage_base": 650,
+        "result_log": "Sirin used Dimension break but Kiana Kaslana parried the attack",
+        "target_hp_remaining": 1160
+      },
+      {
+        "turn": 34,
+        "actor": "Boss",
+        "move_used": "Space tear",
+        "damage_base": 1000,
+        "result_log": "Sirin used Space tear but Kiana Kaslana dodged it!",
+        "target_hp_remaining": 1160
+      },
+      {
+        "turn": 35,
+        "actor": "Player",
+        "move_used": "Neko Charm",
+        "damage_base": 500,
+        "result_log": "Kiana Kaslana used Neko Charm on Sirin",
+        "target_hp_remaining": 2900
+      },
+      {
+        "turn": 36,
+        "actor": "Boss",
+        "move_used": "Dimension break",
+        "damage_base": 650,
+        "result_log": "Sirin used Dimension break on Kiana Kaslana",
+        "target_hp_remaining": 510
+      },
+      {
+        "turn": 37,
+        "actor": "Player",
+        "move_used": "Basic Attack",
+        "damage_base": 440,
+        "result_log": "Kiana Kaslana used Basic Attack but Sirin parried the attack",
+        "target_hp_remaining": 2680
+      },
+      {
+        "turn": 38,
+        "actor": "Boss",
+        "move_used": "subspace lance barrage",
+        "damage_base": 430,
+        "result_log": "Sirin used subspace lance barrage and dealt a critical hit!\nKiana Kaslana has been defeated!",
+        "target_hp_remaining": 0
+      }
+    ],
+    "total_turns": 38
+  },
+  {
+    "battle_id": 2,
+    "timestamp": "2026-01-12T09:29:32.474073",
+    "match_up": "Kiana Kaslana vs Sa",
+    "player_stats": {
+      "name": "Kiana Kaslana",
+      "hp": 5600,
+      "speed": 4,
+      "crit_rate": 4,
+      "defence": 2
+    },
+    "boss_stats": {
+      "name": "Sa",
+      "hp": 9000,
+      "speed": 3,
+      "crit_rate": 1,
+      "defence": 3
+    },
+    "winner": "Sa",
+    "turns": [
+      {
+        "turn": 1,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed but Sa dodged it!",
+        "target_hp_remaining": 9000
+      },
+      {
+        "turn": 2,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed but Sa parried the attack",
+        "target_hp_remaining": 8600
+      },
+      {
+        "turn": 3,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed but Sa dodged it!",
+        "target_hp_remaining": 8600
+      },
+      {
+        "turn": 4,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed but Sa dodged it!",
+        "target_hp_remaining": 8600
+      },
+      {
+        "turn": 5,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed but Sa dodged it!",
+        "target_hp_remaining": 8600
+      },
+      {
+        "turn": 6,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed on Sa",
+        "target_hp_remaining": 7800
+      },
+      {
+        "turn": 7,
+        "actor": "Player",
+        "move_used": "Shamash Unleashed",
+        "damage_base": 800,
+        "result_log": "Kiana Kaslana used Shamash Unleashed but Sa parried the attack",
+        "target_hp_remaining": 7400
+      },
+      {
+        "turn": 8,
+        "actor": "Player",
+        "move_used": "Subspace Lance",
+        "damage_base": 490,
+        "result_log": "Kiana Kaslana used Subspace Lance but Sa dodged it!",
+        "target_hp_remaining": 7400
+      },
+      {
+        "turn": 9,
+        "actor": "Boss",
+        "move_used": "Power of Samsara",
+        "damage_base": 850,
+        "result_log": "Sa used Power of Samsara on Kiana Kaslana",
+        "target_hp_remaining": 4750
+      },
+      {
+        "turn": 10,
+        "actor": "Player",
+        "move_used": "Subspace Lance",
+        "damage_base": 490,
+        "result_log": "Kiana Kaslana used Subspace Lance on Sa",
+        "target_hp_remaining": 6910
+      },
+      {
+        "turn": 11,
+        "actor": "Boss",
+        "move_used": "Power of Samsara",
+        "damage_base": 850,
+        "result_log": "Sa used Power of Samsara and dealt a critical hit!",
+        "target_hp_remaining": 3050
+      },
+      {
+        "turn": 12,
+        "actor": "Player",
+        "move_used": "Subspace Lance",
+        "damage_base": 490,
+        "result_log": "Kiana Kaslana used Subspace Lance and dealt a critical hit!",
+        "target_hp_remaining": 5930
+      },
+      {
+        "turn": 13,
+        "actor": "Boss",
+        "move_used": "Power of Samsara",
+        "damage_base": 850,
+        "result_log": "Sa used Power of Samsara but Kiana Kaslana dodged it!",
+        "target_hp_remaining": 3050
+      },
+      {
+        "turn": 14,
+        "actor": "Boss",
+        "move_used": "Power of Samsara",
+        "damage_base": 850,
+        "result_log": "Sa used Power of Samsara on Kiana Kaslana",
+        "target_hp_remaining": 2200
+      },
+      {
+        "turn": 15,
+        "actor": "Boss",
+        "move_used": "Time acceleration",
+        "damage_base": 650,
+        "result_log": "Sa used Time acceleration on Kiana Kaslana",
+        "target_hp_remaining": 1550
+      },
+      {
+        "turn": 16,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 350,
+        "result_log": "Sa used Basic Attack but Kiana Kaslana dodged it!",
+        "target_hp_remaining": 1550
+      },
+      {
+        "turn": 17,
+        "actor": "Boss",
+        "move_used": "Power of Samsara",
+        "damage_base": 850,
+        "result_log": "Sa used Power of Samsara on Kiana Kaslana",
+        "target_hp_remaining": 700
+      },
+      {
+        "turn": 18,
+        "actor": "Player",
+        "move_used": "Neko Charm",
+        "damage_base": 500,
+        "result_log": "Kiana Kaslana used Neko Charm but Sa parried the attack",
+        "target_hp_remaining": 5680
+      },
+      {
+        "turn": 19,
+        "actor": "Player",
+        "move_used": "Neko Charm",
+        "damage_base": 500,
+        "result_log": "Kiana Kaslana used Neko Charm on Sa",
+        "target_hp_remaining": 5180
+      },
+      {
+        "turn": 20,
+        "actor": "Player",
+        "move_used": "Neko Charm",
+        "damage_base": 500,
+        "result_log": "Kiana Kaslana used Neko Charm but Sa parried the attack",
+        "target_hp_remaining": 4930
+      },
+      {
+        "turn": 21,
+        "actor": "Boss",
+        "move_used": "Time acceleration",
+        "damage_base": 650,
+        "result_log": "Sa used Time acceleration but Kiana Kaslana dodged it!",
+        "target_hp_remaining": 700
+      },
+      {
+        "turn": 22,
+        "actor": "Boss",
+        "move_used": "Matter erasure",
+        "damage_base": 400,
+        "result_log": "Sa used Matter erasure but Kiana Kaslana parried the attack",
+        "target_hp_remaining": 500
+      },
+      {
+        "turn": 23,
+        "actor": "Boss",
+        "move_used": "Power of Samsara",
+        "damage_base": 850,
+        "result_log": "Sa used Power of Samsara on Kiana Kaslana\nKiana Kaslana has been defeated!",
+        "target_hp_remaining": 0
+      }
+    ],
+    "total_turns": 23
+  },
+  {
+    "battle_id": 3,
+    "timestamp": "2026-01-12T09:41:37.724451",
+    "match_up": "Mei vs Sirin",
+    "player_stats": {
+      "name": "Mei",
+      "hp": 5500,
+      "speed": 4,
+      "crit_rate": 3,
+      "defence": 3
+    },
+    "boss_stats": {
+      "name": "Sirin",
+      "hp": 9500,
+      "speed": 2,
+      "crit_rate": 3,
+      "defence": 4
+    },
+    "winner": "Mei",
+    "turns": [
+      {
+        "turn": 1,
+        "actor": "Player",
+        "move_used": "Fate cutter",
+        "damage_base": 780,
+        "result_log": "Mei used Fate cutter but Sirin parried the attack",
+        "target_hp_remaining": 9110
+      },
+      {
+        "turn": 2,
+        "actor": "Player",
+        "move_used": "Fate cutter",
+        "damage_base": 780,
+        "result_log": "Mei used Fate cutter on Sirin",
+        "target_hp_remaining": 8330
+      },
+      {
+        "turn": 3,
+        "actor": "Player",
+        "move_used": "Fate cutter",
+        "damage_base": 780,
+        "result_log": "Mei used Fate cutter but Sirin dodged it!",
+        "target_hp_remaining": 8330
+      },
+      {
+        "turn": 4,
+        "actor": "Player",
+        "move_used": "Fate cutter",
+        "damage_base": 780,
+        "result_log": "Mei used Fate cutter and dealt a critical hit!",
+        "target_hp_remaining": 6770
+      },
+      {
+        "turn": 5,
+        "actor": "Player",
+        "move_used": "Searing slash",
+        "damage_base": 400,
+        "result_log": "Mei used Searing slash on Sirin",
+        "target_hp_remaining": 6370
+      },
+      {
+        "turn": 6,
+        "actor": "Player",
+        "move_used": "Searing slash",
+        "damage_base": 400,
+        "result_log": "Mei used Searing slash on Sirin",
+        "target_hp_remaining": 5970
+      },
+      {
+        "turn": 7,
+        "actor": "Player",
+        "move_used": "Searing slash",
+        "damage_base": 400,
+        "result_log": "Mei used Searing slash and dealt a critical hit!",
+        "target_hp_remaining": 5170
+      },
+      {
+        "turn": 8,
+        "actor": "Player",
+        "move_used": "Searing slash",
+        "damage_base": 400,
+        "result_log": "Mei used Searing slash but Sirin parried the attack",
+        "target_hp_remaining": 4970
+      },
+      {
+        "turn": 9,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack but Mei parried the attack",
+        "target_hp_remaining": 5330
+      },
+      {
+        "turn": 10,
+        "actor": "Boss",
+        "move_used": "Dimension break",
+        "damage_base": 650,
+        "result_log": "Sirin used Dimension break but Mei parried the attack",
+        "target_hp_remaining": 5005
+      },
+      {
+        "turn": 11,
+        "actor": "Boss",
+        "move_used": "Dimension break",
+        "damage_base": 650,
+        "result_log": "Sirin used Dimension break but Mei dodged it!",
+        "target_hp_remaining": 5005
+      },
+      {
+        "turn": 12,
+        "actor": "Boss",
+        "move_used": "Space tear",
+        "damage_base": 1000,
+        "result_log": "Sirin used Space tear on Mei",
+        "target_hp_remaining": 4005
+      },
+      {
+        "turn": 13,
+        "actor": "Player",
+        "move_used": "7 Thunders:Rumble",
+        "damage_base": 500,
+        "result_log": "Mei used 7 Thunders:Rumble on Sirin",
+        "target_hp_remaining": 4470
+      },
+      {
+        "turn": 14,
+        "actor": "Player",
+        "move_used": "7 Thunders:Rumble",
+        "damage_base": 500,
+        "result_log": "Mei used 7 Thunders:Rumble on Sirin",
+        "target_hp_remaining": 3970
+      },
+      {
+        "turn": 15,
+        "actor": "Boss",
+        "move_used": "subspace lance barrage",
+        "damage_base": 430,
+        "result_log": "Sirin used subspace lance barrage on Mei",
+        "target_hp_remaining": 3575
+      },
+      {
+        "turn": 16,
+        "actor": "Boss",
+        "move_used": "Space tear",
+        "damage_base": 1000,
+        "result_log": "Sirin used Space tear but Mei parried the attack",
+        "target_hp_remaining": 3075
+      },
+      {
+        "turn": 17,
+        "actor": "Boss",
+        "move_used": "Dimension break",
+        "damage_base": 650,
+        "result_log": "Sirin used Dimension break but Mei dodged it!",
+        "target_hp_remaining": 3075
+      },
+      {
+        "turn": 18,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack but Mei dodged it!",
+        "target_hp_remaining": 3075
+      },
+      {
+        "turn": 19,
+        "actor": "Player",
+        "move_used": "Basic Attack",
+        "damage_base": 350,
+        "result_log": "Mei used Basic Attack but Sirin parried the attack",
+        "target_hp_remaining": 3795
+      },
+      {
+        "turn": 20,
+        "actor": "Boss",
+        "move_used": "subspace lance barrage",
+        "damage_base": 430,
+        "result_log": "Sirin used subspace lance barrage on Mei",
+        "target_hp_remaining": 2645
+      },
+      {
+        "turn": 21,
+        "actor": "Player",
+        "move_used": "Basic Attack",
+        "damage_base": 350,
+        "result_log": "Mei used Basic Attack but Sirin dodged it!",
+        "target_hp_remaining": 3795
+      },
+      {
+        "turn": 22,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack on Mei",
+        "target_hp_remaining": 2305
+      },
+      {
+        "turn": 23,
+        "actor": "Player",
+        "move_used": "Fate cutter",
+        "damage_base": 780,
+        "result_log": "Mei used Fate cutter and dealt a critical hit!",
+        "target_hp_remaining": 2235
+      },
+      {
+        "turn": 24,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack but Mei dodged it!",
+        "target_hp_remaining": 2305
+      },
+      {
+        "turn": 25,
+        "actor": "Boss",
+        "move_used": "Space tear",
+        "damage_base": 1000,
+        "result_log": "Sirin used Space tear but Mei dodged it!",
+        "target_hp_remaining": 2305
+      },
+      {
+        "turn": 26,
+        "actor": "Player",
+        "move_used": "Fate cutter",
+        "damage_base": 780,
+        "result_log": "Mei used Fate cutter on Sirin",
+        "target_hp_remaining": 1455
+      },
+      {
+        "turn": 27,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack on Mei",
+        "target_hp_remaining": 1965
+      },
+      {
+        "turn": 28,
+        "actor": "Player",
+        "move_used": "Searing slash",
+        "damage_base": 400,
+        "result_log": "Mei used Searing slash and dealt a critical hit!",
+        "target_hp_remaining": 655
+      },
+      {
+        "turn": 29,
+        "actor": "Player",
+        "move_used": "7 Thunders:Rumble",
+        "damage_base": 500,
+        "result_log": "Mei used 7 Thunders:Rumble but Sirin dodged it!",
+        "target_hp_remaining": 655
+      },
+      {
+        "turn": 30,
+        "actor": "Boss",
+        "move_used": "subspace lance barrage",
+        "damage_base": 430,
+        "result_log": "Sirin used subspace lance barrage but Mei parried the attack",
+        "target_hp_remaining": 1750
+      },
+      {
+        "turn": 31,
+        "actor": "Player",
+        "move_used": "Basic Attack",
+        "damage_base": 350,
+        "result_log": "Mei used Basic Attack but Sirin dodged it!",
+        "target_hp_remaining": 655
+      },
+      {
+        "turn": 32,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack but Mei dodged it!",
+        "target_hp_remaining": 1750
+      },
+      {
+        "turn": 33,
+        "actor": "Player",
+        "move_used": "Searing slash",
+        "damage_base": 400,
+        "result_log": "Mei used Searing slash but Sirin parried the attack",
+        "target_hp_remaining": 455
+      },
+      {
+        "turn": 34,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 340,
+        "result_log": "Sirin used Basic Attack on Mei",
+        "target_hp_remaining": 1410
+      },
+      {
+        "turn": 35,
+        "actor": "Player",
+        "move_used": "7 Thunders:Rumble",
+        "damage_base": 500,
+        "result_log": "Mei used 7 Thunders:Rumble on Sirin\nSirin has been defeated!",
+        "target_hp_remaining": 0
+      }
+    ],
+    "total_turns": 35
+  },
+  {
+    "battle_id": 4,
+    "timestamp": "2026-01-12T09:42:08.433358",
+    "match_up": "Bronya vs Sa",
+    "player_stats": {
+      "name": "Bronya",
+      "hp": 6000,
+      "speed": 2,
+      "crit_rate": 3,
+      "defence": 5
+    },
+    "boss_stats": {
+      "name": "Sa",
+      "hp": 9000,
+      "speed": 3,
+      "crit_rate": 1,
+      "defence": 3
+    },
+    "winner": "Sa",
+    "turns": [
+      {
+        "turn": 1,
+        "actor": "Player",
+        "move_used": "Quasi-black hole",
+        "damage_base": 800,
+        "result_log": "Bronya used Quasi-black hole but Sa parried the attack",
+        "target_hp_remaining": 8600
+      },
+      {
+        "turn": 2,
+        "actor": "Player",
+        "move_used": "Quasi-black hole",
+        "damage_base": 800,
+        "result_log": "Bronya used Quasi-black hole on Sa",
+        "target_hp_remaining": 7800
+      },
+      {
+        "turn": 3,
+        "actor": "Player",
+        "move_used": "Quasi-black hole",
+        "damage_base": 800,
+        "result_log": "Bronya used Quasi-black hole on Sa",
+        "target_hp_remaining": 7000
+      },
+      {
+        "turn": 4,
+        "actor": "Boss",
+        "move_used": "Matter erasure",
+        "damage_base": 400,
+        "result_log": "Sa used Matter erasure on Bronya",
+        "target_hp_remaining": 5600
+      },
+      {
+        "turn": 5,
+        "actor": "Player",
+        "move_used": "Quasi-black hole",
+        "damage_base": 800,
+        "result_log": "Bronya used Quasi-black hole but Sa dodged it!",
+        "target_hp_remaining": 7000
+      },
+      {
+        "turn": 6,
+        "actor": "Player",
+        "move_used": "Quasi-black hole",
+        "damage_base": 800,
+        "result_log": "Bronya used Quasi-black hole but Sa parried the attack",
+        "target_hp_remaining": 6600
+      },
+      {
+        "turn": 7,
+        "actor": "Boss",
+        "move_used": "Matter erasure",
+        "damage_base": 400,
+        "result_log": "Sa used Matter erasure but Bronya parried the attack",
+        "target_hp_remaining": 5400
+      },
+      {
+        "turn": 8,
+        "actor": "Player",
+        "move_used": "Quasi-black hole",
+        "damage_base": 800,
+        "result_log": "Bronya used Quasi-black hole but Sa parried the attack",
+        "target_hp_remaining": 6200
+      },
+      {
+        "turn": 9,
+        "actor": "Boss",
+        "move_used": "Power of Samsara",
+        "damage_base": 850,
+        "result_log": "Sa used Power of Samsara but Bronya parried the attack",
+        "target_hp_remaining": 4975
+      },
+      {
+        "turn": 10,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 350,
+        "result_log": "Sa used Basic Attack on Bronya",
+        "target_hp_remaining": 4625
+      },
+      {
+        "turn": 11,
+        "actor": "Boss",
+        "move_used": "Power of Samsara",
+        "damage_base": 850,
+        "result_log": "Sa used Power of Samsara but Bronya parried the attack",
+        "target_hp_remaining": 4200
+      },
+      {
+        "turn": 12,
+        "actor": "Player",
+        "move_used": "Cognitive destruction",
+        "damage_base": 400,
+        "result_log": "Bronya used Cognitive destruction on Sa",
+        "target_hp_remaining": 5800
+      },
+      {
+        "turn": 13,
+        "actor": "Boss",
+        "move_used": "Matter erasure",
+        "damage_base": 400,
+        "result_log": "Sa used Matter erasure on Bronya",
+        "target_hp_remaining": 3800
+      },
+      {
+        "turn": 14,
+        "actor": "Player",
+        "move_used": "Selene",
+        "damage_base": 570,
+        "result_log": "Bronya used Selene on Sa",
+        "target_hp_remaining": 5230
+      },
+      {
+        "turn": 15,
+        "actor": "Player",
+        "move_used": "Basic Attack",
+        "damage_base": 550,
+        "result_log": "Bronya used Basic Attack on Sa",
+        "target_hp_remaining": 4680
+      },
+      {
+        "turn": 16,
+        "actor": "Player",
+        "move_used": "Cognitive destruction",
+        "damage_base": 400,
+        "result_log": "Bronya used Cognitive destruction but Sa dodged it!",
+        "target_hp_remaining": 4680
+      },
+      {
+        "turn": 17,
+        "actor": "Boss",
+        "move_used": "Power of Samsara",
+        "damage_base": 850,
+        "result_log": "Sa used Power of Samsara on Bronya",
+        "target_hp_remaining": 2950
+      },
+      {
+        "turn": 18,
+        "actor": "Player",
+        "move_used": "Selene",
+        "damage_base": 570,
+        "result_log": "Bronya used Selene on Sa",
+        "target_hp_remaining": 4110
+      },
+      {
+        "turn": 19,
+        "actor": "Boss",
+        "move_used": "Time acceleration",
+        "damage_base": 650,
+        "result_log": "Sa used Time acceleration but Bronya parried the attack",
+        "target_hp_remaining": 2625
+      },
+      {
+        "turn": 20,
+        "actor": "Boss",
+        "move_used": "Matter erasure",
+        "damage_base": 400,
+        "result_log": "Sa used Matter erasure on Bronya",
+        "target_hp_remaining": 2225
+      },
+      {
+        "turn": 21,
+        "actor": "Player",
+        "move_used": "Selene",
+        "damage_base": 570,
+        "result_log": "Bronya used Selene but Sa dodged it!",
+        "target_hp_remaining": 4110
+      },
+      {
+        "turn": 22,
+        "actor": "Boss",
+        "move_used": "Matter erasure",
+        "damage_base": 400,
+        "result_log": "Sa used Matter erasure but Bronya parried the attack",
+        "target_hp_remaining": 2025
+      },
+      {
+        "turn": 23,
+        "actor": "Boss",
+        "move_used": "Matter erasure",
+        "damage_base": 400,
+        "result_log": "Sa used Matter erasure on Bronya",
+        "target_hp_remaining": 1625
+      },
+      {
+        "turn": 24,
+        "actor": "Player",
+        "move_used": "Cognitive destruction",
+        "damage_base": 400,
+        "result_log": "Bronya used Cognitive destruction on Sa",
+        "target_hp_remaining": 3710
+      },
+      {
+        "turn": 25,
+        "actor": "Player",
+        "move_used": "Cognitive destruction",
+        "damage_base": 400,
+        "result_log": "Bronya used Cognitive destruction and dealt a critical hit!",
+        "target_hp_remaining": 2910
+      },
+      {
+        "turn": 26,
+        "actor": "Player",
+        "move_used": "Cognitive destruction",
+        "damage_base": 400,
+        "result_log": "Bronya used Cognitive destruction on Sa",
+        "target_hp_remaining": 2510
+      },
+      {
+        "turn": 27,
+        "actor": "Boss",
+        "move_used": "Matter erasure",
+        "damage_base": 400,
+        "result_log": "Sa used Matter erasure but Bronya dodged it!",
+        "target_hp_remaining": 1625
+      },
+      {
+        "turn": 28,
+        "actor": "Boss",
+        "move_used": "Basic Attack",
+        "damage_base": 350,
+        "result_log": "Sa used Basic Attack on Bronya",
+        "target_hp_remaining": 1275
+      },
+      {
+        "turn": 29,
+        "actor": "Boss",
+        "move_used": "Matter erasure",
+        "damage_base": 400,
+        "result_log": "Sa used Matter erasure on Bronya",
+        "target_hp_remaining": 875
+      },
+      {
+        "turn": 30,
+        "actor": "Player",
+        "move_used": "Cognitive destruction",
+        "damage_base": 400,
+        "result_log": "Bronya used Cognitive destruction but Sa dodged it!",
+        "target_hp_remaining": 2510
+      },
+      {
+        "turn": 31,
+        "actor": "Boss",
+        "move_used": "Matter erasure",
+        "damage_base": 400,
+        "result_log": "Sa used Matter erasure but Bronya dodged it!",
+        "target_hp_remaining": 875
+      },
+      {
+        "turn": 32,
+        "actor": "Player",
+        "move_used": "Selene",
+        "damage_base": 570,
+        "result_log": "Bronya used Selene but Sa parried the attack",
+        "target_hp_remaining": 2225
+      },
+      {
+        "turn": 33,
+        "actor": "Player",
+        "move_used": "Cognitive destruction",
+        "damage_base": 400,
+        "result_log": "Bronya used Cognitive destruction on Sa",
+        "target_hp_remaining": 1825
+      },
+      {
+        "turn": 34,
+        "actor": "Boss",
+        "move_used": "Power of Samsara",
+        "damage_base": 850,
+        "result_log": "Sa used Power of Samsara and dealt a critical hit!\nBronya has been defeated!",
+        "target_hp_remaining": 0
+      }
+    ],
+    "total_turns": 34
+  }
+]

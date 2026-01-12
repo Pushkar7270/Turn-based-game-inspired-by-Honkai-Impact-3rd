@@ -1,4 +1,7 @@
+import customtkinter as ctk
+
 import File_handler as fh
+from data_analysis_gui import show_analysis
 from Entites import Entity, Move
 from UI.Battle_window import Battlewindow
 from UI.selection_window import SelectionWindow
@@ -33,6 +36,62 @@ def get_game_entities(filename):
 
 
 def main():
+    # Create main menu window
+    root = ctk.CTk()
+    root.title("Honkai RPG - Main Menu")
+    root.geometry("400x300")
+    root.configure(fg_color="#1a1a2e")
+
+    # Title
+    title_label = ctk.CTkLabel(
+        root, text="HONKAI RPG", font=("Arial", 28, "bold"), text_color="white"
+    )
+    title_label.pack(pady=30)
+
+    def start_game():
+        root.destroy()
+        run_game()
+
+    def analyze_data():
+        show_analysis()
+
+    # Buttons
+    start_btn = ctk.CTkButton(
+        root,
+        text="START GAME",
+        command=start_game,
+        width=200,
+        height=50,
+        font=("Arial", 16, "bold"),
+    )
+    start_btn.pack(pady=20)
+
+    analyze_btn = ctk.CTkButton(
+        root,
+        text="ANALYSE DATA",
+        command=analyze_data,
+        width=200,
+        height=50,
+        font=("Arial", 16, "bold"),
+        fg_color="#e74c3c",
+    )
+    analyze_btn.pack(pady=10)
+
+    quit_btn = ctk.CTkButton(
+        root,
+        text="QUIT",
+        command=root.quit,
+        width=200,
+        height=50,
+        font=("Arial", 16, "bold"),
+        fg_color="#7f8c8d",
+    )
+    quit_btn.pack(pady=10)
+
+    root.mainloop()
+
+
+def run_game():
     # 1. Load Data
     characters, bosses = get_game_entities("Characters.json")
     if not characters or not bosses:

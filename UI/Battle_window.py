@@ -6,6 +6,7 @@ from PIL import Image
 
 from Entites import Entity
 from Game_work_flow import Battle_logic
+from Player_data_collector import PlayerDataCollector
 
 
 @dataclass(frozen=True)
@@ -31,6 +32,8 @@ class Battlewindow(ctk.CTk):
         self.player = player
         self.boss = boss
         self.engine = Battle_logic(player, boss)
+        self.data_collector = PlayerDataCollector()
+        self.data_collector.start_battle(player, boss)
 
         # Grid
         self.grid_rowconfigure(0, weight=4)
@@ -135,12 +138,14 @@ class Battlewindow(ctk.CTk):
             
         # 1. Player's turn
         result = self.engine.execute_attack(self.player, self.boss, move)
+        self.data_collector.log_turn("Player", move.name, move.damage, result, self.boss.hp)
         self.type_message(result)
         self.update_bars()
         self.update_move_buttons()  # Update PP display
         
         # 2. Check if boss is defeated
         if self.boss.hp <= 0:
+            self.data_collector.end_battle(self.player.name)
             self.after(2000, lambda: self.type_message(f"Victory! {self.boss.name} has been defeated!"))
             self.disable_buttons()
             self.after(4000, self.destroy)  # Close window after 4 seconds
@@ -157,11 +162,13 @@ class Battlewindow(ctk.CTk):
         # Boss picks a random move
         boss_move = random.choice(self.boss.moves)
         result = self.engine.execute_attack(self.boss, self.player, boss_move)
+        self.data_collector.log_turn("Boss", boss_move.name, boss_move.damage, result, self.player.hp)
         self.type_message(result)
         self.update_bars()
         
         # Check if player is defeated
         if self.player.hp <= 0:
+            self.data_collector.end_battle(self.boss.name)
             self.after(2000, lambda: self.type_message(f"Defeat! {self.player.name} has been defeated!"))
             self.disable_buttons()
             self.after(4000, self.destroy)  # Close window after 4 seconds
