@@ -44,6 +44,9 @@ class DataAnalysisWindow(ctk.CTk):
         self.state("zoomed")  # Full screen on Windows
         self.configure(fg_color="#1a1a2e")
 
+        # Store image references to prevent garbage collection
+        self.image_refs = []
+
         # Load data
         self.sim_data = fh.load_data("simulation_data.json") or []
         self.player_data = fh.load_data("player_data.json") or []
@@ -100,7 +103,11 @@ class DataAnalysisWindow(ctk.CTk):
             pil_img = Image.open(entity.image_path)
             ctk_img = ctk.CTkImage(pil_img, size=(80, 80))
             img_label = ctk.CTkLabel(header_frame, image=ctk_img, text="")
+            # Store reference at class level to prevent garbage collection
+            self.image_refs.append(ctk_img)
+            print(f"Successfully loaded image for {entity.name}: {entity.image_path}")
         except:  # noqa: E722
+            print(f"Failed to load image for {entity.name}: {entity.image_path},")
             img_label = ctk.CTkLabel(
                 header_frame,
                 text=entity.name[:3].upper(),
@@ -363,6 +370,7 @@ class DataAnalysisWindow(ctk.CTk):
 
 def show_analysis():
     app = DataAnalysisWindow()
+    app.focus_force()  # Bring window to front
     app.mainloop()
 
 
