@@ -4,6 +4,7 @@ import customtkinter as ctk
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from PIL import Image
 
 import File_handler as fh
 
@@ -95,19 +96,17 @@ class DataAnalysisWindow(ctk.CTk):
         header_frame.pack(fill="x", padx=20, pady=20)
 
         # Character image
-        img_label = ctk.CTkLabel(
-            header_frame, text="", width=80, height=80, corner_radius=10
-        )
         try:
-            from PIL import Image
-
-            img_path = entity.image_path
-            pil_img = Image.open(img_path)
+            pil_img = Image.open(entity.image_path)
             ctk_img = ctk.CTkImage(pil_img, size=(80, 80))
-            img_label.configure(image=ctk_img)
-        except Exception:
-            img_label.configure(
+            img_label = ctk.CTkLabel(header_frame, image=ctk_img, text="")
+        except:  # noqa: E722
+            img_label = ctk.CTkLabel(
+                header_frame,
                 text=entity.name[:3].upper(),
+                width=80,
+                height=80,
+                corner_radius=10,
                 fg_color="#2C3E50",
                 font=("Arial", 16, "bold"),
                 text_color="white",
